@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21-Balls</title>
+    <link rel = "icon" href = 
+    "ball.png"
+            type = "image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="index1.css">
+    
+</head>
+<body onload="showAlert()">  
+    
+        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <!-- <a class="navbar-brand" href="#">21-Balls</a> -->
+              <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    
+                  </li>
+                </ul> --> -->
+                <!-- <button type="button" id="btn" class="btn btn-info" onclick="myFunction()">Start game..!!</button> -->
+                <div id="xyz">
+                  <!-- <p>Click the button to demonstrate the prompt box.</p> -->
+                  <p id="demo"></p>
+                  </div>
+                  
+                <!-- </div>
+              </div>
+            </div>
+          </nav> -->
+          <div class="computer">
+            <p id="comp"></p>
+          </div>
+            <div class="bubbles">
+                <span style="--i:11"></span>
+                <span style="--i:12"></span>
+                <span style="--i:24"></span>
+                <span style="--i:10"></span>
+                <span style="--i:14"></span>
+                <span style="--i:23"></span>
+                <span style="--i:18"></span>
+                <span style="--i:16"></span>
+                <span style="--i:19"></span>
+                <span style="--i:21"></span>
+                <span style="--i:20"></span>
+                <span style="--i:22"></span>
+                <span style="--i:25"></span>
+                <span style="--i:18"></span>
+                <span style="--i:21"></span>
+                <span style="--i:15"></span>
+                <span style="--i:13"></span>
+                <span style="--i:26"></span>
+                <span style="--i:17"></span>
+                <span style="--i:13"></span>
+                <span style="--i:28"></span>
+                <span style="--i:28"></span>
+                <span style="--i:23"></span>
+                <span style="--i:21"></span>
+                <span style="--i:17"></span>
+                <span style="--i:13"></span>
+                <span style="--i:20"></span>
+                <span style="--i:15"></span>
+                <span style="--i:15"></span>
+                <span style="--i:13"></span>
+                <span style="--i:26"></span>
+                <span style="--i:17"></span>
+                <span style="--i:13"></span>
+                <span style="--i:28"></span>
+                <span style="--i:28"></span>
+                <span style="--i:23"></span>
+                <span style="--i:21"></span>
+                <span style="--i:17"></span>
+                <span style="--i:13"></span>
+                <span style="--i:20"></span>
+                <span style="--i:15"></span>
+            </div>
+            <div class="container">
+              <div class="content">
+                <h1>Rules:</h1>
+                <p>
+                  <ul>
+                    <li>You have to choose any 1 value at a time</li>
+                    <li>Player remains with 21 at their turn loses the game</li>
+                    <li>You have to select numbers in sequential order (0-21)</li>
+                    <li>You can select 0 or 1 input button from each line</li>
+                  </ul>
+                </p>
+              </div>
+               <div class="toggleBtn">
+                
+                  
+                </div>
+                <!-- <div id="xyz"> -->
+                <!-- <p>Click the button to demonstrate the prompt box.</p> -->
+                <!-- <p id="demo"></p>
+                <button type="button" id="btn" class="btn btn-info" onclick="myFunction()">Start game..!!</button>
+              </div> -->
+                
+               
+              </div>
+            </div>
+          <div id="table">
+            <span id="one">1</span>
+            <span id="two">2</span>
+            <span id="three">3</span>
+            <span id="four">4</span>
+            <span id="five">5</span>
+            <span id="six">6</span>
+            <span id="seven">7</span>
+            <span id="eight">8</span>
+            <span id="nine">9</span>
+            <span id="ten">10</span>
+            <span id="eleven">11</span>
+            <span id="twelve">12</span>
+            <span id="thirteen">13</span>
+            <span id="fourteen">14</span>
+            <span id="fifteen">15</span>
+            <span id="sixteen">16</span>
+            <span id="seventeen">17</span>
+            <span id="eighteen">18</span>
+            <span id="nineteen">19</span>
+            <span id="twenty">20</span>
+            <span id="twentyone">21</span>
+            
+            <!-- <button onclick="inp()">Submit</button> -->
+            <div.computer>
+              <p id="comp"></p>
+            </div.computer>
+          </div>
+          <div class="input">
+            <label>Enter your choice:</label><br><br>
+            <div class="first">
+            <button class="btn btn-dark" onclick="inp1_u()">1</button>
+            <button class="btn btn-dark" onclick="inp2_u()">1,2</button>
+            <button class="btn btn-dark" onclick="inp3_u()">1,2,3</button>
+            <button class="btn btn-dark" onclick="inp4_u()">1,2,3,4</button>
+            </div><br>
+            <div class="second">
+            <button class="btn btn-dark" onclick="inp67_u()">6,7</button>
+            <button class="btn btn-dark" onclick="inp68_u()">6,7,8</button>
+            <button class="btn btn-dark" onclick="inp69_u()">6,7,8,9</button>
+            </div><br>
+            <div class="third">
+            <button class="btn btn-dark" onclick="inp9_u()">9</button>
+            <button class="btn btn-dark" onclick="inp910_u()">9,10</button>
+            <button class="btn btn-dark" onclick="inp911_u()">9,10,11</button>
+            <button class="btn btn-dark" onclick="inp912_u()">9,10,11,12</button>
+            </div><br>
+            <div class="fourth">
+            <button class="btn btn-dark" onclick="inp10_u()">10</button>
+            <button class="btn btn-dark" onclick="inp101_u()">10,11</button>
+            <button class="btn btn-dark" onclick="inp102_u()">10,11,12</button>
+            <button class="btn btn-dark" onclick="inp103_u()">10,11,12,13</button>
+            </div><br>
+            <div class="fifth">
+            <button class="btn btn-dark" onclick="inp13_u()">13</button>
+            <button class="btn btn-dark" onclick="inp134_u()">13,14</button>
+            <button class="btn btn-dark" onclick="inp135_u()">13,14,15</button>
+            <button class="btn btn-dark" onclick="inp136_u()">13,14,15,16</button>
+            </div><br>
+            <div class="sixth">
+            <button class="btn btn-dark" onclick="inp14_u()">14</button>
+            <button class="btn btn-dark" onclick="inp145_u()">14,15</button>
+            <button class="btn btn-dark" onclick="inp146_u()">14,15,16</button>
+            <button class="btn btn-dark" onclick="inp147_u()">14,15,16,17</button>
+            </div><br>
+            <div class="seventh">
+            <button class="btn btn-dark" onclick="inp15_u()">15</button>
+            <button class="btn btn-dark" onclick="inp156_u()">15,16</button>
+            <button class="btn btn-dark" onclick="inp157_u()">15,16,17</button>
+            <button class="btn btn-dark" onclick="inp158_u()">15,16,17,18</button>
+            </div><br>
+            <div class="eigth">
+            <button class="btn btn-dark" onclick="inp18_u()">18</button>
+            <button class="btn btn-dark" onclick="inp189_u()">18,19</button>
+            <button class="btn btn-dark" onclick="inp182_u()">18,19,20</button>
+            </div><br>
+           <div class="ninth">
+            <button class="btn btn-dark" onclick="inp19_u()">19</button>
+            <button class="btn btn-dark" onclick="inp192_u()">19,20</button>
+            </div><br>
+            <div class="tenth">
+            <button class="btn btn-dark" onclick="inp20_u()">20</button>
+            </div>
+          </div>
+
+
+            <!-- <input id="choice" type="text" placeholder="Removable Elements(0-4)"> -->
+            
+          </div>
+         
+          
+          <script src="index.js"></script>   
+</body>
+</html>
