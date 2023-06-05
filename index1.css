@@ -179,7 +179,7 @@ body{
 }
 .container.active .toggleBtn{
     bottom: 300px;
-    transform: rotate(135deg);
+    transform: rotate(0deg);
     background-color:rgb(123, 37, 60);
     left: 500px;
     
