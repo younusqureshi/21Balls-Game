@@ -7,7 +7,8 @@ function showAlert() {
   
 }
 
-
+rule = document.getElementById("rules");
+rule.innerText = "Click to read rules";
 
 let toggleBtn = document.querySelector('.toggleBtn');
 let container = document.querySelector('.container');
